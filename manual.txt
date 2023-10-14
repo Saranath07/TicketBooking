@@ -1,0 +1,20 @@
+Hello, Welcome to this App Development 2 Project on Ticket Booking
+
+Requirements:
+    -- You need a Bash shell to run (for celery and redis jobs)
+    -- python3
+    -- flask
+    -- vue2
+
+Run the command : `pip3 -r requirements.txt` file to download all the requirements.
+
+Start the backend : python3 main.py 
+
+Start the frontend : npm run serve
+
+Start the redis server : redis-server
+
+Start the mailhog server : mailhog
+
+Start the celery workers : sh workers.sh
+
