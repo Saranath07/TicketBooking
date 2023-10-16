@@ -14,7 +14,8 @@ Start the frontend : npm run serve
 
 Start the redis server : redis-server
 
-Start the mailhog server : mailhog
+Start the mailhog server : mailhog (Install mailhog using go)
 
-Start the celery workers : sh workers.sh
+Start the celery workers : sh start_worker.sh
 
+Start the beat : sh start_beat.sh
