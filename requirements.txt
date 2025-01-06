@@ -1,5 +1,5 @@
 flask
-flask_sqlalchemy
+Flask-SQLAlchemy
 flask_cors
 flask_jwt_extended
 flask_restful

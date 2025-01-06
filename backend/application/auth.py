@@ -24,7 +24,7 @@ def signup_user():
    old_user = Users.query.filter_by(email = data['email']).first()
    if old_user:
        return {"error" : "User with same email already exist"}, 409
-   hashed_password = generate_password_hash(data['password'], method='sha256')
+   hashed_password = generate_password_hash(data['password'], method='pbkdf2:sha256')
    public_id = str(uuid.uuid4())
 
     
@@ -50,7 +50,7 @@ def signup_admin():
    old_user = Users.query.filter_by(email = data['email']).first()
    if old_user:
        return {"error" : "User with same email already exist"}, 409
-   hashed_password = generate_password_hash(data['password'], method='sha256')
+   hashed_password = generate_password_hash(data['password'], method='pbkdf2:sha256')
    
    if data['email'] and data['password']:
    
